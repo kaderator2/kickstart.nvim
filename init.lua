@@ -325,6 +325,13 @@ require('lazy').setup({
   --
   -- START OF KADE CHANGES
 
+  {
+    'windwp/nvim-autopairs',
+    event = 'InsertEnter',
+    config = true,
+    -- use opts = {} for passing setup options
+    -- this is equivalent to setup({}) function
+  },
   -- Fix bad habits
   {
     'm4xshen/hardtime.nvim',
