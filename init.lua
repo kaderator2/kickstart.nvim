@@ -338,7 +338,6 @@ require('lazy').setup({
     branch = 'harpoon2',
     dependencies = { 'nvim-lua/plenary.nvim' },
   },
-  { 'tpope/vim-fugitive' },
   {
     'folke/flash.nvim',
     event = 'VeryLazy',
@@ -1109,6 +1108,7 @@ require('lazy').setup({
   --  Uncomment any of the lines below to enable them (you will need to restart nvim).
   --
   require 'kickstart.plugins.undotree',
+  require 'kickstart.plugins.fugitive',
   require 'kickstart.plugins.harpoon-config',
   -- require 'kickstart.plugins.fugitive',
   -- require 'kickstart.plugins.indent_line',
