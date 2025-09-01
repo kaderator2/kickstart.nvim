@@ -334,7 +334,11 @@ require('lazy').setup({
     opts = {},
   },
   -- Navigation and git tools
-  { 'ThePrimeagen/harpoon' },
+  {
+    'ThePrimeagen/harpoon',
+    branch = 'harpoon2',
+    dependencies = { 'nvim-lua/plenary.nvim' },
+  },
   { 'tpope/vim-fugitive' },
   {
     'folke/flash.nvim',
