@@ -332,13 +332,6 @@ require('lazy').setup({
     -- use opts = {} for passing setup options
     -- this is equivalent to setup({}) function
   },
-  -- Fix bad habits
-  {
-    'm4xshen/hardtime.nvim',
-    lazy = false,
-    dependencies = { 'MunifTanjim/nui.nvim' },
-    opts = {},
-  },
   -- Navigation and git tools
   {
     'ThePrimeagen/harpoon',
@@ -1117,6 +1110,8 @@ require('lazy').setup({
   require 'kickstart.plugins.undotree',
   require 'kickstart.plugins.fugitive',
   require 'kickstart.plugins.harpoon-config',
+  require 'kickstart.plugins.code-biscuts',
+  require 'kickstart.plugins.comfy-lines',
   -- require 'kickstart.plugins.fugitive',
   -- require 'kickstart.plugins.indent_line',
   -- require 'kickstart.plugins.lint',

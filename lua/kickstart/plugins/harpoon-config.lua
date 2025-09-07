@@ -11,10 +11,9 @@ return { -- In the file where you manage your lazy.nvim plugins
       vim.keymap.set('n', '<leader>a', function()
         harpoon:list():add()
       end)
-
-      -- NOTE: You have a conflicting keymap for <C-e>
-      -- This one will be overwritten by the Telescope one below.
-      -- vim.keymap.set("n", "<C-e>", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
+      vim.keymap.set('n', '<leader>l', function()
+        harpoon:list():clear()
+      end)
 
       vim.keymap.set('n', '<C-h>', function()
         harpoon:list():select(1)
